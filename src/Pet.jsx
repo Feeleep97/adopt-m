@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Pet = ({ name, animal, breed, images, location, id }) => {
   let hero = "http://pets-imagges.dev-apis.com/pets/none.jpg"; // placeholder image
 
@@ -8,7 +8,7 @@ const Pet = ({ name, animal, breed, images, location, id }) => {
     hero = images[0];
   }
   return (
-    <a href={`/detauls/${id}`} className="pet">
+    <Link to={`/details/${id}`} className="pet">
       <div className="image-container">
         <img src={hero} alt={name} />
       </div>
@@ -19,7 +19,7 @@ const Pet = ({ name, animal, breed, images, location, id }) => {
         </h2>
         <h3>{location}</h3>
       </div>
-    </a>
+    </Link>
   );
 };
 export default Pet;
