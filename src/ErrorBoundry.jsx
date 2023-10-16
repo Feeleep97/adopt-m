@@ -1,5 +1,6 @@
-import { Component } from "react";
 import { Link } from "react-router-dom";
+
+import { Component } from "react";
 
 class ErrorBoundry extends Component {
   state = { hasError: false };

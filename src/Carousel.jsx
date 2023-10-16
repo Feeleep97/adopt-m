@@ -13,7 +13,6 @@ class Carousel extends Component {
     this.setState({
       active: e.target.dataset.index,
     });
-    console.log(this);
   };
 
   render() {
